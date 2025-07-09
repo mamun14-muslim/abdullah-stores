@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Stores</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #2d89ef;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1c5dab;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product img {
+      width: 120px;
+      height: auto;
+      border-radius: 5px;
+    }
+    form input, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #2d89ef;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Abdullah Stores</h1>
+    <p>আপনার নির্ভরযোগ্য ইলেকট্রনিক্স অনলাইন শপ</p>
+  </header>
+
+  <nav>
+    <a href="index.html#home">হোম</a>
+    <a href="index.html#products">পণ্যসমূহ</a>
+    <a href="index.html#order">অর্ডার</a>
+    <a href="index.html#contact">যোগাযোগ</a>
+  </nav>
+
+  <section id="products">
+    <h2>আমাদের পণ্য</h2>
+    <div class="product">
+      <img src="https://via.placeholder.com/120?text=Phone" alt="Phone">
+      <div><strong>স্যামসাং ফোন</strong><br>দাম: ১৫,০০০ টাকা</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/120?text=Speaker" alt="Speaker">
+      <div><strong>সাউন্ড বক্স</strong><br>দাম: ৩,৫০০ টাকা</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/120?text=Headphone" alt="Headphone">
+      <div><strong>হেডফোন</strong><br>দাম: ১,২০০ টাকা</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/120?text=Laptop" alt="Laptop">
+      <div><strong>ল্যাপটপ</strong><br>দাম: ৪৫,০০০ টাকা</div>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/120?text=Charger" alt="Charger">
+      <div><strong>চার্জার</strong><br>দাম: ৫০০ টাকা</div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>অর্ডার করুন</h2>
+    <form>
+      <input type="text" placeholder="আপনার নাম" required>
+      <input type="tel" placeholder="মোবাইল নম্বর" required>
+      <input type="text" placeholder="ঠিকানা" required>
+      <select required>
+        <option value="">পণ্য নির্বাচন করুন</option>
+        <option>স্যামসাং ফোন</option>
+        <option>সাউন্ড বক্স</option>
+        <option>হেডফোন</option>
+        <option>ল্যাপটপ</option>
+        <option>চার্জার</option>
+      </select>
+      <select required>
+        <option value="">পেমেন্ট অপশন</option>
+        <option>বিকাশ</option>
+        <option>নগদ</option>
+        <option>ক্যাশ অন ডেলিভারি</option>
+      </select>
+      <button type="submit">অর্ডার করুন</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <form>
+      <input type="text" placeholder="আপনার নাম" required>
+      <input type="email" placeholder="আপনার ইমেইল" required>
+      <textarea placeholder="আপনার বার্তা" rows="4" required></textarea>
+      <button type="submit">পাঠান</button>
+    </form>
+    <p>অথবা ইমেইল করুন: <strong>mamun14.muslim@gmail.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; ২০২৫ Abdullah Stores | সর্বস্বত্ব সংরক্ষিত</p>
+  </footer>
+
+</body>
+</html>
